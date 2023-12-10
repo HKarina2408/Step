@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Sen:wght@400;500;600;700;800&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background: #212121;
+  color: white;
+}
+body * {
+  font-family: "Sen", sans-serif;
+}
+/* Animations */
+@keyframes image-background-pulsing {
+  0% {
+    transform: scale(0.5) translateX(0);
+    filter: blur(30px);
+    background: rgba(0, 118, 244, 0.2);
+  }
+  30% {
+    transform: scale(1) translateX(300px);
+    filter: blur(40px);
+    background: rgba(0, 118, 244, 0.6);
+  }
+  50% {
+    transform: scale(1.5) translateX(-300px);
+    filter: blur(50px);
+    background: rgba(208, 62, 186, 0.7);
+  }
+  70% {
+    transform: scale(1) translateX(300px);
+    filter: blur(40px);
+    background: rgba(0, 118, 244, 0.6);
+  }
+  100% {
+    transform: scale(0.5) translateX(0);
+    filter: blur(30px);
+    background: rgba(0, 118, 244, 0.2);
+  }
+}
+.image-background-pulsing {
+  position: absolute;
+  top: 50%;
+  width: 700px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  animation: 15s linear infinite image-background-pulsing;
+}
+
+@keyframes colors-animation {
+  from {
+    width: 10%;
+    height: 10vh;
+  }
+
+  to {
+    width: 60%;
+    height: 80vh;
+  }
+}
+
+.image-background-pulsing-2 {
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  margin-top: 250px;
+  border-radius: 50%;
+  background: rgba(0, 118, 244, 0.2);
+  animation: 6s linear infinite colors-animation;
+}
+
+/* Effects */
+.hoverable {
+  transition: 0.5s;
+}
+.hoverable:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 10px 0.7px lightgray;
+}
+.flex {
+  display: flex;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+/* buttons */
+button {
+  color: white;
+  padding: 18px 36px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  /* overriding */
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+button.primary {
+  background: #0076f4;
+  transition: 1s;
+}
+button.secondary {
+  background: transparent;
+  border: 1px solid rgba(248, 250, 251, 0.1);
+}
+
+/* links */
+a {
+  color: #b4bcd0;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  font-size: 86px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 74px;
+  margin: 10px;
+}
+
+span.up-title {
+  color: #0076f4;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+}
+
+span.sub-title {
+  color: #b4bcd0;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 30px;
+}
+
+.why-prismatic-section {
+  margin-top: 180px;
+}

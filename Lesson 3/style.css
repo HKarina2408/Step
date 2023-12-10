@@ -1,0 +1,167 @@
+body {
+  background: lightskyblue;
+  margin: 0;
+}
+
+header {
+  width: calc(100% - 40px);
+  background: #14293e;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+nav {
+  /* width: 50%; */
+  display: inline-block;
+  float: right;
+  margin-top: 30px;
+  /* margin-left: 70%; */
+}
+
+a {
+  font-size: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#video {
+  width: 100%;
+  height: auto;
+}
+
+#pricing-section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #14293e;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#pricing-section table {
+  width: 70%;
+  border: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#pricing-section table .hidden {
+  /* display: none; */
+  visibility: hidden;
+}
+
+#pricing-section table td {
+  height: 35px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#pricing-section table .first-td {
+  text-align: left;
+}
+
+#pricing-section table .light-grey > td {
+  background: lightgray;
+}
+
+#pricing-section table .dark-grey > td {
+  background: darkgray;
+}
+
+#pricing-section table th {
+  background: lightskyblue;
+  height: 70px;
+  font-size: 40px;
+  color: #14293e;
+}
+
+#contact-section {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h3 {
+  font-size: 80px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  margin: 25px;
+}
+
+form {
+  width: 800px;
+  background: #14293e;
+  padding: 20px;
+  padding-top: 40px;
+  border-radius: 16px;
+  box-shadow: 0px 0px 20px 4px black;
+}
+
+.field {
+  background: lightgrey;
+  color: grey;
+  margin: 15px;
+  border-radius: 16px;
+  border: none;
+  font-size: 25px;
+  padding: 10px;
+}
+
+#inputs-wrapper {
+  width: 100%;
+}
+
+input {
+  width: calc(50% - 60px);
+  display: inline-block;
+}
+
+textarea {
+  width: calc(100% - 40px - 20px);
+  height: 180px;
+}
+
+#form-button {
+  width: calc(100% - 40px);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 16px;
+  background: lightskyblue;
+  border: none;
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+
+footer {
+  background: #14293e;
+  padding: 40px;
+  margin-top: 100px;
+}
+
+footer .footer-column {
+  width: 50%;
+  display: inline-block;
+}
+
+footer .footer-column a {
+  font-size: 25px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+footer img {
+  margin-top: 20px;
+}
+
+footer .license {
+  color: lightskyblue;
+  font-size: 20px;
+}
