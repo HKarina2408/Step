@@ -112,6 +112,21 @@ button.secondary {
   border: 1px solid rgba(248, 250, 251, 0.1);
 }
 
+input {
+  /* overriding */
+  background: none;
+  outline: none;
+
+  padding: 9px 20px;
+  border-radius: 6px;
+  border: 1px solid rgba(248, 250, 251, 0.2);
+  color: var(--light-grey, #b4bcd0);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 30px;
+}
+
 /* links */
 a {
   color: #b4bcd0;
