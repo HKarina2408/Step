@@ -110,3 +110,45 @@
   height: 100%;
   position: relative;
 }
+
+.cards-maket {
+  width: 100%;
+  gap: 30px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.cards-maket hr {
+  width: 1px;
+  height: 60px;
+  color: #00a7e6;
+  margin: 40px 35px;
+}
+
+.cards-maket .card {
+  width: 420px;
+  height: 140px;
+  background: #212121;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.cards-maket .card .card-title {
+  color: #fff;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.45px;
+  margin-top: 55px;
+}
+
+.cards-maket .card .card-price-subtitle {
+  color: #b4bcd0;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
