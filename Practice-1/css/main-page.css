@@ -37,7 +37,7 @@
   margin-top: 40px;
   align-items: center;
   justify-content: center;
-  height: 380px;
+  height: auto;
 }
 
 .cards-section .card {
