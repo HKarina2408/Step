@@ -119,3 +119,15 @@
   margin-right: 15px;
 } */
 
+@media only screen and (max-width: 620px) {
+  /* For mobile phones: */
+  .footer {
+    width: 100%;
+  }
+  .cards-section {
+    flex-direction: column;
+  }
+  h1 {
+    line-height: initial;
+  }
+}

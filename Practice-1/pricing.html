@@ -11,17 +11,23 @@
   </head>
   <body>
     <header>
-      <img src="./assets/logo.svg" alt="logo" />
-      <nav>
-        <a href="#">Company</a>
-        <a href="#">CFO Newsletter</a>
-        <a href="#">Pricing</a>
+      <img class="logo" src="./assets/logo.svg" alt="logo" />
+      <input class="side-menu" type="checkbox" id="side-menu" />
+      <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+      <nav class="nav">
+        <ul class="menu">
+          <li><a href="#">Company</a></li>
+          <li><a href="#">CFO Newsletter</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li>
+            <div class="buttons-wrapper">
+              <button class="secondary hoverable">Login</button>
+              <button class="secondary hoverable">Contact sales</button>
+              <button class="primary hoverable">Free trial</button>
+            </div>
+          </li>
+        </ul>
       </nav>
-      <div class="buttons-wrapper">
-        <button class="secondary hoverable">Login</button>
-        <button class="secondary hoverable">Contact sales</button>
-        <button class="primary hoverable">Free trial</button>
-      </div>
     </header>
 
     <section
