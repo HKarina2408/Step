@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1>Hello Bootstrap</h1>
+
+    <h3>Forms</h3>
+
+    <div>
+      <button class="btn btn-primary">Primary</button>
+      <button class="btn btn-secondary">Secondary</button>
+      <button class="btn btn-warning">Warning</button>
+      <button class="btn btn-danger">Danger</button>
+      <a href="#" class="btn btn-secondary">Link as button</a>
+
+      <form class="p-3 m-3 w-50 d-flex flex-column justify-content-center">
+        <!-- <label for="text-input" class="form-label">Enter the text</label> -->
+        <input
+          id="email-input"
+          type="email"
+          class="form-control mb-1"
+          placeholder="Enter the text"
+        />
+        <input
+          id="password-email-input"
+          type="password"
+          class="form-control mb-2"
+          placeholder="Enter the password"
+          disabled
+        />
+        <select class="form-select mb-2">
+          <option>Option-1</option>
+        </select>
+        <label for="input-range" class="form-label">Select salary</label>
+        <input id="input-range" type="range" class="form-range" />
+
+        <div class="d-flex gap-2">
+          <input id="check-input" type="checkbox" class="form-check-input" />
+          <label for="check-input" class="form-label">Agreement</label>
+        </div>
+
+        <div class="form-check form-switch mt-2 mp-2">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckDefault"
+          />
+          <label class="form-check-label" for="flexSwitchCheckDefault"
+            >Default switch checkbox input</label
+          >
+        </div>
+        <button class="btn btn-dark">Submit</button>
+      </form>
+    </div>
+
+    <h3>Components</h3>
+
+    <div class="w-50 d-flex flex-column m-3">
+      <h5>Alerts</h5>
+      <div class="alert alert-primary" role="alert">Some message</div>
+      <div class="alert alert-warning">Warning</div>
+      <div class="alert alert-dark">Dark alert</div>
+      <div class="alert alert-success">Success alert</div>
+
+      <div class="alert alert-info">
+        <h4 class="alert-heading">Info text</h4>
+        <hr />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero laborum
+          suscipit necessitatibus, dolores commodi sapiente. Cupiditate eaque
+          doloribus obcaecati laboriosam, nam qui, nihil accusantium placeat quo
+          id animi cumque similique!
+        </p>
+      </div>
+
+      <div class="alert alert-info">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero laborum
+          suscipit necessitatibus, dolores commodi sapiente. Cupiditate eaque
+          doloribus obcaecati laboriosam, nam qui, nihil accusantium placeat quo
+          id animi cumque similique!
+        </p>
+        <div class="w-100 d-flex justify-content-between">
+          <div class="d-flex align-items-center gap-2">
+            <a href="#">Share</a>
+            <a href="#">Like</a>
+          </div>
+          <span>17:00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-50 m-3 d-flex flex-column">
+      <h5>Badge</h5>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita
+        provident voluptas pariatur
+        <span class="badge bg-danger">aliquam</span> accusamus dolore
+        necessitatibus nisi at ratione quidem, consequatur minus! Magni minima
+        mollitia delectus porro, impedit nemo officia.
+      </p>
+      <button type="button" class="btn btn-primary position-relative">
+        Inbox
+        <span
+          class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+        >
+          99+
+          <span class="visually-hidden">unread messages</span>
+        </span>
+      </button>
+    </div>
+
+    <div class="w-50 m-3 d-flex flex-column">
+      <h5>Breadcrumbs</h5>
+      <nav>
+        <ul class="breadcrumb">
+          <li class="breadcrumb-item">Link1</li>
+          <li class="breadcrumb-item active"><a href="#">Link2</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="w-50 d-flex flex-column">
+      <div id="slider-1" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#slider-1"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider-1"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#slider-1"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <img
+            src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhcnN8ZW58MHx8MHx8fDA%3D"
+            alt="car-1"
+            class="w-100 object-fit-cover carousel-item"
+          />
+          <img
+            src="https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D"
+            alt="car-2"
+            class="w-100 object-fit-cover carousel-item active"
+          />
+          <img
+            src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?cs=srgb&dl=pexels-yurii-hlei-1545743.jpg&fm=jpg"
+            alt="car-3"
+            class="w-100 object-fit-cover carousel-item"
+          />
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#slider-1"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#slider-1"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
