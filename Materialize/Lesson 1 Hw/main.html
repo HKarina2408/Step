@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="forms-wrapper">
+      <table class="centered striped responsive-table">
+        <thead>
+          <tr>
+            <th><i class="material-icons">face</i></th>
+            <th><i class="material-icons">flight</i></th>
+            <th><i class="material-icons">flight_land</i></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Igor</td>
+            <td>10:00</td>
+            <td>11:30</td>
+          </tr>
+          <tr>
+            <td>Olena</td>
+            <td>12:00</td>
+            <td>18:00</td>
+          </tr>
+          <tr>
+            <td>Egor</td>
+            <td>20:00</td>
+            <td>23:00</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="input">
+      <h5>Register</h5>
+      <p>Join to community now!</p>
+      <div class="input-field">
+        <i class="material-icons prefix">account_circle</i>
+        <input
+          id="second-name"
+          type="text"
+          placeholder="Enter username"
+          class="validate"
+        />
+      </div>
+
+      <div class="input-field">
+        <i class="material-icons prefix">email</i>
+        <input
+          id="second-name"
+          type="email"
+          placeholder="Enter email"
+          class="validate"
+        />
+      </div>
+      <div class="input-field">
+        <i class="material-icons prefix">lock</i>
+        <input
+          id="second-name"
+          type="password"
+          placeholder="Enter password"
+          class="validate"
+        />
+      </div>
+
+      <div class="input-field message">
+        <i class="material-icons prefix">vpn_key</i>
+        <textarea id="message" class="materialize-textarea"></textarea>
+        <label for="message">Confirm password</label>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
