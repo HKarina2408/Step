@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Layout (grids)</h1>
+
+      <div class="row">
+        <div class="col s12 green">
+          <h4>Col</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6 yellow">
+          <h4>Col</h4>
+        </div>
+        <div class="col s6 purple">
+          <h4>Col</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s1 blue">
+          <h4>Col</h4>
+        </div>
+        <div class="col s5 grey">
+          <h4>Col</h4>
+        </div>
+        <div class="col s6 teal">
+          <h4>Col</h4>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s4 teal">
+          <h4>Col</h4>
+        </div>
+        <div class="col s8 grey">
+          <h4>Col</h4>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore,
+            quo deleniti? Ullam rem tempore, quae facilis iste quas, vero
+            consectetur asperiores velit corporis officia, sunt nisi sapiente
+            dolores fuga adipisci.
+          </p>
+        </div>
+      </div>
+      <h1>Adaptivities</h1>
+      <ul>
+        <li>s(1-12) [0px 600px]</li>
+        <li>m(1-12) [600px 1000px]</li>
+        <li>l(1-12) [900px 1200px]</li>
+        <li>xl(1-12) [1200px +]</li>
+      </ul>
+      <div class="row">
+        <div class="col s12 m6 l12 xl7 teal">
+          <h4>Responsive col</h4>
+        </div>
+      </div>
+
+      <h1>Utility classes</h1>
+      <!-- <hr /> -->
+      <div class="divider"></div>
+      <h1 class="truncate">
+        Divider above Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        Odit quisquam sed nulla, earum praesentium culpa! Quaerat inventore ipsa
+        sit eius voluptate aperiam consectetur quod beatae esse voluptatibus,
+        iure, aliquam recusandae!
+      </h1>
+      <div class="row">
+        <div class="col s5">
+          <p class="truncate">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+            sequi rerum quasi veniam ea enim totam soluta ipsam in cumque unde
+            tempore inventore culpa ducimus deserunt, ut aut laudantium
+            quisquam?
+          </p>
+        </div>
+      </div>
+
+      <div class="teal row hoverable left-align">
+        <h4>Here is a text (left)</h4>
+      </div>
+
+      <div class="teal row hoverable right-align">
+        <h4>Here is a text (left)</h4>
+      </div>
+
+      <div class="teal row hoverable center-align waves-effect">
+        <h4>Here is a text (left)</h4>
+      </div>
+
+      <h1>Buttons</h1>
+      <div class="row">
+        <div class="col s3 center-align">
+          <h4>Default button</h4>
+          <button class="btn">Button</button>
+        </div>
+
+        <div class="col s3 center-align">
+          <h4>large Button</h4>
+          <button class="btn-large">Button</button>
+        </div>
+
+        <div class="col s3 center-align">
+          <h4>Small Button</h4>
+          <button class="btn-small">Button</button>
+        </div>
+
+        <div class="col s3 center-align">
+          <h4>Icons Button</h4>
+          <button class="btn">
+            <i class="material-icons right">send</i>
+            Button
+          </button>
+        </div>
+      </div>
+
+      <h1>Buttons with effects</h1>
+      <div class="row">
+        <div class="col s3 center-align">
+          <h4>Icons Button</h4>
+          <button class="btn-large waves-effect">Effect button</button>
+        </div>
+
+        <div class="col s3 center-align">
+          <h4>Icons Button</h4>
+          <button class="btn-large waves-effect disabled">
+            Disabled button
+          </button>
+        </div>
+      </div>
+
+      <div class="col s3 center-align">
+        <h4>Floating Button</h4>
+        <button class="btn-large waves-effect my-floating-btn">
+          Floating button
+        </button>
+      </div>
+
+      <h1>Badges</h1>
+      <div class="collection">
+        <a class="collection-item" href="#"
+          >Badge item
+          <span class="badge">New message</span>
+        </a>
+        <a class="collection-item" href="#"
+          >Red Badge item
+          <span class="new badge red">+1</span>
+        </a>
+        <a class="collection-item" href="#"
+          >Badge item
+          <span class="new badge">+1</span>
+        </a>
+      </div>
+      <span class="badge">Badge</span>
+
+      <h3>Badge in dropdowns</h3>
+      <ul id="dropdown" class="dropdown-content">
+        <li>
+          <a href="https://www.google.com.ua/"
+            >Google
+            <span class="badge new black">100k</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="#"
+            >Facebook
+            <span class="badge new blue">100k</span>
+          </a>
+        </li>
+      </ul>
+      <a class="btn dropdown-trigger" href="#!" data-target="dropdown"
+        >Dropdown
+      </a>
+
+      <h1>Breadcrumbs</h1>
+      <nav class="black">
+        <div class="nav-wrapper">
+          <div class="col s12">
+            <a href="#!" class="breadcrumb">Page1</a>
+            <a href="#!" class="breadcrumb">Page2</a>
+            <a href="#!" class="breadcrumb">Blog</a>
+            <a href="#!" class="breadcrumb"
+              ><i class="material-icons">info</i>Comment</a
+            >
+          </div>
+        </div>
+      </nav>
+
+      <h1>Card</h1>
+      <div class="row card-wrapper">
+        <div class="col m12 l4 ">
+          <div class="card teal">
+            <div class="card-content white-text">
+              <span class="card-title">First Card (Basic)</span>
+              <p class="white-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+                tempore itaque harum a magnam vel maiores, ducimus, molestias
+                quisquam molestiae accusamus. Pariatur animi distinctio velit ea
+                eum esse beatae. Earum.
+              </p>
+              <p class="white-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+                tempore itaque harum a magnam vel maiores, ducimus, molestias
+                quisquam molestiae accusamus. Pariatur animi distinctio velit ea
+                eum esse beatae. Earum.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m12 l4">
+          <div class="card black hoverable">
+            <div class="card-content white-text">
+              <span class="card-title">First Card (Basic)</span>
+              <p class="white-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+                tempore itaque harum a magnam vel maiores, ducimus, molestias
+                quisquam molestiae accusamus. Pariatur animi distinctio velit ea
+                eum esse beatae. Earum.
+              </p>
+              <p class="white-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio,
+                tempore itaque harum a magnam vel maiores, ducimus, molestias
+                quisquam molestiae accusamus. Pariatur animi distinctio velit ea
+                eum esse beatae. Earum.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="#!">Card link</a>
+              <button class="btn waves-effect">
+                <i class="material-icons left">info</i>
+                Card button
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col m12 l4">
+          <div class="card blue white-text">
+            <div class="card-image">
+              <img src="https://i.infocar.ua/i/12/5437/1400x936.jpg" />
+              <span class="card-title"> Ford Mustang </span>
+            </div>
+            <div class="card-content">
+              <p class="white-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                sunt esse amet molestias ipsa veniam fuga ratione dolore optio?
+                Vero, vel esse. Vero totam esse ut quas asperiores vel quasi?
+              </p>
+            </div>
+            <div class="card-action center-align">
+              <a href="#">Info</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col s6">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://sneakersbanda.com.ua/images/detailed/338/img01_ar9x-kl.jpg"
+              />
+              <span class="card-title">Item</span>
+              <a class="btn-floating halfway-fab red">
+                <i class="material-icons">add</i>
+              </a>
+            </div>
+            <div class="card-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta
+                distinctio iure repellat reprehenderit, quos libero, est sit
+                error eos perspiciatis ab consectetur beatae voluptas, fugiat
+                molestiae pariatur in magnam at.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s6">
+        <div class="card">
+          <div class="card-image">
+            <img
+              class="activator"
+              src="https://i.infocar.ua/i/12/5437/1400x936.jpg"
+            />
+          </div>
+          <div class="card-content">
+            <span class="card-title activator"
+              >Card title
+              <i class="material-icons right">info</i>
+            </span>
+            <p>This is the text...</p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title"
+              >Card title
+              <i class="material-icons right">close</i>
+            </span>
+            <p>Additional info</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Blanditiis ab odio vel sed nesciunt quaerat! Quisquam iure
+              deleniti repellendus natus maiores perspiciatis? Fugiat eligendi
+              reprehenderit molestias amet aliquam sit ratione.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        // code here
+        $(".dropdown-trigger").dropdown();
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
