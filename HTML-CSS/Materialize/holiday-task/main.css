@@ -1,0 +1,144 @@
+.image-wrapper img {
+  height: 1080px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  height: 1080px;
+  display: flex;
+  width: 100%;
+  padding: 259px 28px 259.02px 28px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.table .intro {
+  display: flex;
+  width: 394px;
+  padding: 1px 24.796px 2px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.intro h5 {
+  display: flex;
+  height: 29px;
+  flex-direction: column;
+  justify-content: center;
+
+  color: rgba(76, 78, 100, 0.87);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.18px;
+  margin: 0 !important;
+}
+
+.intro p {
+  display: flex;
+  height: 17px;
+  flex-direction: column;
+  justify-content: center;
+
+  color: rgba(76, 78, 100, 0.6);
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20.01px;
+  letter-spacing: 0.15px;
+}
+
+.info {
+  width: 394px;
+  height: 62px;
+  padding: 0px 16px;
+  align-items: center;
+
+  border-radius: 8px;
+  background: rgba(102, 108, 255, 0.12);
+}
+
+.info p {
+  display: flex;
+  width: 283.31px;
+  height: 15px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+
+  color: #666cff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.4px;
+}
+
+.form-check {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  display: flex;
+  width: 394px;
+  height: 42px;
+  padding: 11px 0px 12px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #666cff;
+  color: white;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 0px 12px 0px;
+  gap: 10px;
+  color: #666cff;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 0px 12px 0px;
+
+  color: rgba(76, 78, 100, 0.87);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+}
+
+.images-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 11px 0px 12px 0px;
+  gap: 5px;
+}
+
+[type="checkbox"].filled-in:checked + span:not(.lever):after {
+  border: 2px solid #666cff;
+  background-color: #666cff;
+}

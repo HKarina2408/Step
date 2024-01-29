@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="row">
+      <form class="col">
+        <div class="image-wrapper col">
+          <img src="./assets/div.MuiBox-root.svg" />
+        </div>
+
+        <div class="col">
+          <div class="table">
+            <div class="intro">
+              <h5>Welcome to Materialize! 👋</h5>
+              <p>Please sign-in to your account and start the adventure</p>
+            </div>
+            <div class="info">
+              <p>Admin: admin@materialize.com / Pass: admin</p>
+              <p>Client: client@materialize.com / Pass: client</p>
+            </div>
+
+            <div>
+              <div class="input-field">
+                <input
+                  disabled
+                  id="name"
+                  type="email"
+                  placeholder="admin@materialize.com"
+                />
+                <label for="name">Email</label>
+              </div>
+
+              <div class="input-field">
+                <input disabled id="name" type="password" placeholder="admin" />
+                <label for="name">Password</label>
+              </div>
+
+              <div class="form-check">
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Remember Me </span>
+                </label>
+                <a class="link" href="#">Forgot password?</a>
+              </div>
+              <button>Login</button>
+
+              <div class="link">
+                <span class="grey-text darken-3">New on our platform?</span>
+                <a class="link" href="#">Create an account</a>
+              </div>
+
+              <div class="text">
+                <span>or</span>
+              </div>
+
+              <div class="images-wrapper">
+                <img src="./assets/facebook.svg" alt="" />
+                <img src="./assets/twitter.svg" alt="" />
+                <img src="./assets/git.svg" alt="" />
+                <img src="./assets/google.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        // code here
+        $(".dropdown-trigger").dropdown();
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
