@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@500;600;700&display=swap");
+h1 {
+  color: #1e1e1e;
+  font-family: Manrope;
+  font-size: 240px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 240px;
+  opacity: 0.1;
+}
+
+h2 {
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.32px;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: Manrope;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h5 {
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+
+h6 {
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 27px;
+}
+.content-wrapper .start-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.content-wrapper .start-wrapper .divider {
+  width: 70px;
+  height: 2px;
+  background: #900000;
+}
+.content-wrapper .start-wrapper h5 {
+  color: #900000;
+}
+.content-wrapper .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+.content-wrapper .link a {
+  color: white;
+  font-family: Manrope;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-decoration: none;
+  color: #900000;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body * {
+  font-family: Manrope;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+.hero-section {
+  width: 100%;
+  background: url(./assets/bg-hero.svg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1000px;
+}
+.hero-section .section-content {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  padding-top: 100px;
+}
+.hero-section .section-content .text-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+.hero-section .section-content .text-wrapper .divider {
+  width: 70px;
+  height: 2px;
+  background: #dd8737;
+}
+.hero-section .section-content .text-wrapper h6 {
+  color: #dd8737;
+}
+.hero-section .section-content h2 {
+  color: #fff;
+  font-family: Manrope;
+  font-size: 88px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100px;
+  text-transform: capitalize;
+}
+
+.steps-section {
+  width: 100%;
+  background: #9fd5ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 200px;
+}
+.steps-section .steps-content {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 115px;
+}
+.steps-section .steps-content .number-wrapper {
+  position: absolute;
+  top: -10;
+  left: -10;
+}
+
+.content-section {
+  width: 100%;
+  background: #9fd5ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 200px;
+}
+.content-section .content {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 245px;
+}
+.content-section .content .number-wrapper {
+  position: absolute;
+  top: -10;
+  left: -10;
+}
+
+.last-section {
+  width: 100%;
+  background: #9fd5ef;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 200px;
+}
+.last-section .last-content {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 115px;
+}
+.last-section .last-content .number-wrapper {
+  position: absolute;
+  top: -10;
+  left: -10;
+}
