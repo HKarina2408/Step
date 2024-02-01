@@ -7,11 +7,14 @@ body {
   margin: 0;
   padding: 0;
 
-  // background: url(./assets/bg-hero.svg);
-
   * {
     font-family: Manrope;
     overflow-x: hidden;
+  }
+
+  .bg-wrapper {
+    background: url(./assets/bg-hero.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -26,7 +29,6 @@ h6 {
 
 .hero-section {
   width: 100%;
-  background: url(./assets/bg-hero.svg);
 
   display: flex;
   flex-direction: column;
@@ -39,7 +41,7 @@ h6 {
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
-    padding-top: 100px;
+    padding-top: 80px;
 
     .text-wrapper {
       display: flex;
@@ -90,8 +92,9 @@ h6 {
     .number-wrapper {
       position: absolute;
       top: -10;
-      left: -10;
+      left: -180px;
     }
+
     .image-wrapper {
       img {
         width: 560px;
@@ -121,7 +124,7 @@ h6 {
     .number-wrapper {
       position: absolute;
       top: -10;
-      left: -10;
+      left: -180px;
     }
   }
 }
@@ -147,7 +150,7 @@ h6 {
     .number-wrapper {
       position: absolute;
       top: -10;
-      left: -10;
+      left: -180px;
     }
   }
 }
@@ -155,7 +158,6 @@ h6 {
 @media (max-width: rules.$phone) {
   .hero-section {
     .section-content {
-      margin-top: 70px;
       align-items: center;
 
       h2 {
@@ -168,7 +170,7 @@ h6 {
 
   .steps-section {
     .steps-content {
-      width: 80%;
+      width: 150%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -191,7 +193,7 @@ h6 {
 
   .content-section {
     .content {
-      width: 80%;
+      width: 150%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -214,7 +216,7 @@ h6 {
 
   .last-section {
     .last-content {
-      width: 80%;
+      width: 150%;
       display: flex;
       flex-direction: column;
       align-items: center;

@@ -47,6 +47,7 @@ h6 {
 }
 
 .content-wrapper {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -86,7 +87,6 @@ header {
   width: 100%;
   color: white;
   padding: 64px 0;
-  background: url(./assets/bg-hero.svg);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,16 +95,6 @@ header .header-content {
   width: 80%;
   display: flex;
   justify-content: space-between;
-}
-header .header-content .logo {
-  width: 108px;
-  height: 24px;
-  margin: auto 0;
-  gap: 4px;
-  padding-right: 3px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 header .header-content .buttons-container {
   display: flex;

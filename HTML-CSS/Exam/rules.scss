@@ -63,15 +63,18 @@ h6 {
 }
 
 .content-wrapper {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 27px;
+  position: relative;
 
   .start-wrapper {
     display: flex;
     align-items: center;
     gap: 24px;
+
 
     .divider {
       width: 70px;

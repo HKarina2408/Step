@@ -46,10 +46,12 @@ h6 {
 }
 
 .content-wrapper {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 27px;
+  position: relative;
 }
 .content-wrapper .start-wrapper {
   display: flex;
