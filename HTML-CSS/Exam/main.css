@@ -88,6 +88,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  background: #9fd5ef;
 }
 body * {
   font-family: Manrope;
@@ -120,7 +121,6 @@ h6 {
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
-  padding-top: 80px;
 }
 .hero-section .section-content .text-wrapper {
   display: flex;
@@ -145,6 +145,17 @@ h6 {
   text-transform: capitalize;
 }
 
+section {
+  padding: 100px;
+  position: relative;
+}
+section .number-wrapper {
+  position: absolute;
+  top: 100px;
+  left: 10%;
+  overflow: hidden;
+}
+
 .steps-section {
   width: 100%;
   background: #9fd5ef;
@@ -160,11 +171,6 @@ h6 {
   align-items: center;
   gap: 115px;
 }
-.steps-section .steps-content .number-wrapper {
-  position: absolute;
-  top: -10;
-  left: -180px;
-}
 .steps-section .steps-content .image-wrapper img {
   width: 560px;
   height: 720px;
@@ -178,17 +184,17 @@ h6 {
   align-items: center;
   padding-bottom: 200px;
 }
+.content-section .number-wrapper {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+}
 .content-section .content {
   width: 70%;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 245px;
-}
-.content-section .content .number-wrapper {
-  position: absolute;
-  top: -10;
-  left: -180px;
 }
 
 .last-section {
@@ -206,13 +212,12 @@ h6 {
   align-items: center;
   gap: 115px;
 }
-.last-section .last-content .number-wrapper {
-  position: absolute;
-  top: -10;
-  left: -180px;
-}
 
 @media (max-width: 500px) {
+  .hero-section {
+    padding-left: 0;
+    padding-top: 30px;
+  }
   .hero-section .section-content {
     align-items: center;
   }
@@ -221,13 +226,20 @@ h6 {
     font-size: 30px;
     line-height: 50px;
   }
+  .steps-section {
+    margin: 0;
+    padding: 0;
+  }
+  .steps-section .number-wrapper {
+    display: none;
+  }
   .steps-section .steps-content {
     width: 150%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding-top: 20px;
+    padding-top: 70px;
   }
   .steps-section .steps-content h3 {
     font-size: 30px;
@@ -238,13 +250,20 @@ h6 {
     -o-object-fit: none;
        object-fit: none;
   }
+  .content-section {
+    margin: 0;
+    padding: 0;
+  }
+  .content-section .number-wrapper {
+    display: none;
+  }
   .content-section .content {
     width: 150%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding-top: 20px;
+    padding: 70px;
   }
   .content-section h3 {
     font-size: 30px;
@@ -255,6 +274,13 @@ h6 {
     -o-object-fit: none;
        object-fit: none;
   }
+  .last-section {
+    margin: 0;
+    padding: 0;
+  }
+  .last-section .number-wrapper {
+    display: none;
+  }
   .last-section .last-content {
     width: 150%;
     display: flex;
@@ -262,6 +288,7 @@ h6 {
     align-items: center;
     gap: 20px;
     padding-top: 20px;
+    padding-bottom: 200px;
   }
   .last-section .last-content h3 {
     font-size: 30px;

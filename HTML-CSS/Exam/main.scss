@@ -6,6 +6,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  background: rules.$lightblue;
 
   * {
     font-family: Manrope;
@@ -41,7 +42,6 @@ h6 {
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
-    padding-top: 80px;
 
     .text-wrapper {
       display: flex;
@@ -71,6 +71,18 @@ h6 {
   }
 }
 
+section {
+  padding: 100px;
+  position: relative;
+
+  .number-wrapper {
+    position: absolute;
+    top: 100px;
+    left: 10%;
+    overflow: hidden;
+  }
+}
+
 .steps-section {
   width: 100%;
   background: rules.$lightblue;
@@ -89,12 +101,6 @@ h6 {
 
     gap: 115px;
 
-    .number-wrapper {
-      position: absolute;
-      top: -10;
-      left: -180px;
-    }
-
     .image-wrapper {
       img {
         width: 560px;
@@ -105,6 +111,12 @@ h6 {
 }
 
 .content-section {
+  .number-wrapper {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+  }
+
   width: 100%;
   background: rules.$lightblue;
 
@@ -120,12 +132,6 @@ h6 {
     flex-direction: row;
     align-items: center;
     gap: 245px;
-
-    .number-wrapper {
-      position: absolute;
-      top: -10;
-      left: -180px;
-    }
   }
 }
 
@@ -146,17 +152,14 @@ h6 {
     align-items: center;
 
     gap: 115px;
-
-    .number-wrapper {
-      position: absolute;
-      top: -10;
-      left: -180px;
-    }
   }
 }
 
 @media (max-width: rules.$phone) {
   .hero-section {
+    padding-left: 0;
+    padding-top: 30px;
+
     .section-content {
       align-items: center;
 
@@ -169,13 +172,20 @@ h6 {
   }
 
   .steps-section {
+    margin: 0;
+    padding: 0;
+
+    .number-wrapper {
+      display: none;
+    }
+
     .steps-content {
       width: 150%;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 20px;
-      padding-top: 20px;
+      padding-top: 70px;
 
       h3 {
         font-size: 30px;
@@ -192,13 +202,20 @@ h6 {
   }
 
   .content-section {
+    margin: 0;
+    padding: 0;
+
+    .number-wrapper {
+      display: none;
+    }
+
     .content {
       width: 150%;
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 20px;
-      padding-top: 20px;
+      padding: 70px;
     }
 
     h3 {
@@ -215,6 +232,13 @@ h6 {
   }
 
   .last-section {
+    margin: 0;
+    padding: 0;
+
+    .number-wrapper {
+      display: none;
+    }
+
     .last-content {
       width: 150%;
       display: flex;
@@ -222,6 +246,7 @@ h6 {
       align-items: center;
       gap: 20px;
       padding-top: 20px;
+      padding-bottom: 200px;
 
       h3 {
         font-size: 30px;
