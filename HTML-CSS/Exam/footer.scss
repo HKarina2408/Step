@@ -29,7 +29,6 @@ footer {
         h2 {
           color: #1e1e1e;
         }
-        
       }
     }
 
@@ -69,6 +68,28 @@ footer {
     display: flex;
     justify-content: flex-start;
     opacity: 0.5;
+  }
+}
 
+@media (max-width: rules.$phone) {
+  footer {
+    .footer-column {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 30px;
+      padding-bottom: 40px;
+
+      .links-wrapper {
+        justify-content: center;
+        gap: 20px;
+
+        .links-column {
+          gap: 10px;
+          margin-right: 0;
+        }
+      }
+    }
   }
 }

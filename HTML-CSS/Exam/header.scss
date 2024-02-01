@@ -59,3 +59,18 @@ header {
     }
   }
 }
+
+@media (max-width: rules.$phone) {
+  header {
+    .header-content {
+      justify-content: space-between;
+      align-items: center;
+      
+      .buttons-container {
+        nav {
+          display: none;
+        }
+      }
+    }
+  }
+}

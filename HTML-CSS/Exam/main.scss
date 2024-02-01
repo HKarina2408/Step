@@ -6,6 +6,8 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+
   // background: url(./assets/bg-hero.svg);
 
   * {
@@ -90,6 +92,12 @@ h6 {
       top: -10;
       left: -10;
     }
+    .image-wrapper {
+      img {
+        width: 560px;
+        height: 720px;
+      }
+    }
   }
 }
 
@@ -140,6 +148,90 @@ h6 {
       position: absolute;
       top: -10;
       left: -10;
+    }
+  }
+}
+
+@media (max-width: rules.$phone) {
+  .hero-section {
+    .section-content {
+      margin-top: 70px;
+      align-items: center;
+
+      h2 {
+        width: 300px;
+        font-size: 30px;
+        line-height: 50px;
+      }
+    }
+  }
+
+  .steps-section {
+    .steps-content {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-top: 20px;
+
+      h3 {
+        font-size: 30px;
+      }
+
+      .image-wrapper {
+        img {
+          width: 450px;
+          height: auto;
+          object-fit: none;
+        }
+      }
+    }
+  }
+
+  .content-section {
+    .content {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-top: 20px;
+    }
+
+    h3 {
+      font-size: 30px;
+    }
+
+    .image-wrapper {
+      img {
+        width: 450px;
+        height: auto;
+        object-fit: none;
+      }
+    }
+  }
+
+  .last-section {
+    .last-content {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding-top: 20px;
+
+      h3 {
+        font-size: 30px;
+      }
+
+      .image-wrapper {
+        img {
+          width: 450px;
+          height: auto;
+          object-fit: none;
+        }
+      }
     }
   }
 }

@@ -142,3 +142,13 @@ header .header-content .accound-wrapper nav a {
   line-height: 32px;
   text-decoration: none;
 }
+
+@media (max-width: 500px) {
+  header .header-content {
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .header-content .buttons-container nav {
+    display: none;
+  }
+}
