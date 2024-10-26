@@ -1,0 +1,28 @@
+@if (!job) {
+<h2>Job not found</h2>
+} @else {
+<div class="wrapper">
+  <h4>{{ job.job_job_title }}</h4>
+  <p>Job date: {{ jobDate | date }}</p>
+  <p>Job short date: {{ jobDate | date : "fullDate" }}</p>
+  <p>Job hire date: {{ job.job_posted_at_datetime_utc | date : "fullDate" }}</p>
+
+  <p>{{ job.job_city | uppercase }}</p>
+  <p>{{ "HELLO WORLD" | lowercase }}</p>
+  <p>{{ 0.11 | percent }}</p>
+  <p>{{ "Hello" | slice : 1 : 4 }}</p>
+  <p>{{ "tITlE" | titlecase }}</p>
+
+  <pre>{{ job | json }}</pre>
+
+  <p>{{ promise | async }}</p>
+
+  <p>{{ [1, 2, 3, 4, 5, 6, 7, 8, 9] | odd }}</p>
+
+  <!-- Завдання:
+Написати custom pipe
+Який приймає значення у вигляді масива чисел
+І повертає максимальне число -->
+  <p>{{ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15] | max }}</p>
+</div>
+}
