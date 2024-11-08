@@ -4,15 +4,17 @@ import { JobType } from '../../../types/job.type';
 
 @Pipe({
   name: 'highestJobRate',
-  standalone: true
+  standalone: true,
+  pure: false,
 })
 export class HighestJobRatePipe implements PipeTransform {
+  constructor(private jobService: JobService) {}
 
-constructor(private jobService: JobService) {}  
+  transform(value: JobType[], jobId: string, ...args: unknown[]): string {
+    const highestRateJob = this.jobService.getHighestRateJob(
+      this.jobService.jobs
+    );
 
-transform(value: JobType[], jobId: string, ...args: unknown[]): string {
-  const highestRateJob = this.jobService.getHighestRateJob(this.jobService.jobs);
-
-  return jobId === highestRateJob?.job_id ? "Highest Rate!" : "";
-}
+    return jobId === highestRateJob?.job_id ? 'Highest Rate!' : '';
+  }
 }

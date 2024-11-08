@@ -4,7 +4,12 @@ import { JobsLikedListComponent } from './job/jobs-liked-list/jobs-liked-list.co
 import { JobDetailsComponent } from './job/job-details/job-details.component';
 
 export const routes: Routes = [
-    { path: 'jobs', component: JobsListComponent },
-    { path: 'liked-jobs', component: JobsLikedListComponent },
-    { path: 'job-details/:job-id', component: JobDetailsComponent },
+  {
+    path: '',
+    redirectTo: 'jobs',
+    pathMatch: 'full',
+  },
+  { path: 'jobs', component: JobsListComponent },
+  { path: 'liked-jobs', component: JobsLikedListComponent },
+  { path: 'job-details/:job-id', component: JobDetailsComponent },
 ];

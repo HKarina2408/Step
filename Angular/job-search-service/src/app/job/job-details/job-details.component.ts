@@ -21,31 +21,26 @@ import { MaxPipe } from '../../pipes/max/max.pipe';
     DatePipe,
     LowerCasePipe,
     UpperCasePipe,
+    TitleCasePipe,
     PercentPipe,
     SlicePipe,
-    TitleCasePipe,
     JsonPipe,
     AsyncPipe,
     OddPipe,
-    MaxPipe,
-    
+    MaxPipe
   ],
   templateUrl: './job-details.component.html',
   styleUrl: './job-details.component.css',
 })
 export class JobDetailsComponent implements OnInit {
-jobType: JobType[] | undefined;
-job_max_salary: JobType[] | undefined;
-  jobs!: JobType[];
-  constructor(public jobService: JobService) {}
+  constructor(public jobService: JobService) { }
 
   job?: JobType;
 
   jobDate = new Date();
 
-  promise = new Promise((res, rej) =>
-    setTimeout(() => res('Hello from promise'), 2000)
-  );
+  promise = new Promise((res, rej) => setTimeout(() => rej("Hello from promise"), 2000))
+
   ngOnInit(): void {
     const jobId = window.location.pathname.split('/').at(-1);
 
